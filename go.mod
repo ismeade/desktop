@@ -2,10 +2,7 @@ module desktop
 
 go 1.17
 
-require (
-	github.com/gin-gonic/gin v1.7.4
-	github.com/webview/webview v0.0.0-20210330151455-f540d88dde4e
-)
+require github.com/gin-gonic/gin v1.7.4
 
 require (
 	github.com/gin-contrib/sse v0.1.0 // indirect

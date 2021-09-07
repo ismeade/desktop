@@ -2,13 +2,13 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/webview/webview"
+	//"github.com/webview/webview"
 )
 
 func main() {
-	go startWebServer()
+	startWebServer()
 
-	startWebView()
+	//startWebView()
 }
 
 func startWebServer() {
@@ -18,12 +18,12 @@ func startWebServer() {
 	r.Run(":38080")
 }
 
-func startWebView() {
-	w := webview.New(false)
-	defer w.Destroy()
-	w.SetTitle("desktop")
-	w.SetSize(1000, 800, webview.HintNone)
-	w.Navigate("http://localhost:38080/index.html")
-	// w.Navigate("./static/index.html")
-	w.Run()
-}
+//func startWebView() {
+//w := webview.New(false)
+//defer w.Destroy()
+//w.SetTitle("desktop")
+//w.SetSize(1000, 800, webview.HintNone)
+//w.Navigate("http://localhost:38080/index.html")
+//// w.Navigate("./static/index.html")
+//w.Run()
+//}
